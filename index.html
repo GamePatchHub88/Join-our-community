@@ -1,120 +1,161 @@
 <!doctype html>
-<html lang="en">
+<html lang="ar">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Join Our Community</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- Fonts -->
+    <!-- Font -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <style>
+      :root {
+        /* Backgrounds */
+        --bg-page: #eaf2f6;
+        --bg-card: #ffffff;
+        --bg-primary: #2bb3b1;
+        --bg-secondary: #4cc3c1;
+
+        /* Text */
+        --text-main: #2f3e46;
+        --text-muted: #7a8a97;
+        --text-light: #ffffff;
+        --text-accent: #b7d63c;
+
+        /* UI */
+        --btn-bg: #c7e136;
+        --btn-text: #ffffff;
+        --radius: 8px;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: var(--bg-page);
+        font-family: "Inter", sans-serif;
+        color: var(--text-main);
+        line-height: 1.6;
+      }
+
+      main.card {
+        background-color: var(--bg-card);
+        border-radius: var(--radius);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+        overflow: hidden;
+      }
+
+      h1 {
+        color: var(--bg-primary);
+        font-size: 24px;
+        font-weight: 700;
+      }
+
+      h2 {
+        color: var(--text-accent);
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      h3 {
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--text-light);
+      }
+
+      p {
+        font-size: 14px;
+        color: var(--text-muted);
+      }
+
+      .intro p {
+        color: var(--text-muted);
+      }
+
+      .subscription {
+        background-color: var(--bg-primary);
+        color: var(--text-light);
+      }
+
+      .why-us {
+        background-color: var(--bg-secondary);
+        color: var(--text-light);
+      }
+
+      .price {
+        font-size: 32px;
+        font-weight: 700;
+        color: var(--text-light);
+      }
+
+      .price span {
+        font-size: 14px;
+        font-weight: 400;
+        opacity: 0.8;
+      }
+
+      button {
+        background-color: var(--btn-bg);
+        color: var(--btn-text);
+        border: none;
+        border-radius: 6px;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 14px;
+        cursor: pointer;
+      }
+
+      ul {
+        list-style: none;
+        font-size: 14px;
+      }
+
+      ul li {
+        margin-bottom: 6px;
+        opacity: 0.9;
+      }
+    </style>
   </head>
   <body>
-    <!-- Animated Background -->
-    <div class="bg-animation">
-      <div class="gradient-orb orb-1"></div>
-      <div class="gradient-orb orb-2"></div>
-      <div class="gradient-orb orb-3"></div>
-      <div class="stars"></div>
-    </div>
+    <div class="tt">
+    <main class="card">
+      <section class="intro">
+        <h1>Join our community</h1>
+        <h2>30-day, hassle-free money back guarantee</h2>
+        <p>
+          Gain access to our full library of tutorials along with expert code
+          reviews. Perfect for any developers who are serious about honing their
+          skills.
+        </p>
+      </section>
 
-    <div class="container">
-      <main class="card">
-        <!-- Glow Effect -->
-        <div class="card-glow"></div>
-        
-        <section class="intro">
-          <div class="badge">✨ Exclusive Offer</div>
-          <h1 class="title-epic">
-            Join our <span class="highlight">legendary community</span>
-          </h1>
-          <h2 class="subtitle">
-            30-day, hassle-free money back guarantee
-          </h2>
-          <p class="description">
-            Gain access to our full library of tutorials along with expert code
-            reviews. Perfect for any developers who are serious about honing their
-            skills.
-          </p>
+      <div class="rt">
+        <section class="subscription">
+          <h3>Monthly Subscription</h3>
+          <p class="price">$29 <span>per month</span></p>
+          <p>Full access for less than $1 a day</p>
+          <button type="button" class="button">Sign Up</button>
         </section>
 
-        <div class="features-grid">
-          <section class="subscription">
-            <div class="icon-wrapper">
-              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-              </svg>
-            </div>
-            <h3>Monthly Subscription</h3>
-            <div class="price-container">
-              <p class="price">$29</p>
-              <span class="period">per month</span>
-            </div>
-            <p class="price-desc">Full access for less than $1 a day</p>
-            <button type="button" class="btn-primary">
-              <span>Sign Up</span>
-              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-              </svg>
-            </button>
-          </section>
-
-          <section class="why-us">
-            <div class="icon-wrapper">
-              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-              </svg>
-            </div>
-            <h3>Why Us</h3>
-            <ul class="features-list">
-              <li>
-                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                </svg>
-                Tutorials by industry experts
-              </li>
-              <li>
-                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                </svg>
-                Peer &amp; expert code review
-              </li>
-              <li>
-                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                </svg>
-                Coding exercises
-              </li>
-              <li>
-                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                </svg>
-                Access to our GitHub repos
-              </li>
-              <li>
-                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                </svg>
-                Community forum
-              </li>
-              <li>
-                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                </svg>
-                Flashcard decks
-              </li>
-              <li>
-                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                </svg>
-                New videos every week
-              </li>
-            </ul>
-          </section>
-        </div>
-      </main>
+        <section class="why-us">
+          <h3>Why Us</h3>
+          <ul>
+            <li>Tutorials by industry experts</li>
+            <li>Peer &amp; expert code review</li>
+            <li>Coding exercises</li>
+            <li>Access to our GitHub repos</li>
+            <li>Community forum</li>
+            <li>Flashcard decks</li>
+            <li>New videos every week</li>
+          </ul>
+        </section>
+      </div>
+    </main>
     </div>
   </body>
 </html>
